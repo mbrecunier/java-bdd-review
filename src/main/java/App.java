@@ -17,6 +17,11 @@ public class App {
     get("/puzzle", (request, response) -> {
       HashMap<String, Object> model = new HashMap<String, Object>();
       model.put("template", "templates/puzzle.vtl");
+
+      String originalString = request.queryParams("original-string");
+      String puzzleString = App.vowelReplacer(originalString);
+      model.put("puzzleString", puzzleString);
+
       return new ModelAndView(model, layout);
     }, new VelocityTemplateEngine());
   }
