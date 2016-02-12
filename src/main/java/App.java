@@ -6,6 +6,7 @@ import static spark.Spark.*;
 
 public class App {
   public static void main(String[] args) {
+    staticFileLocation("/public");
     String layout = "templates/layout.vtl";
 
     get("/", (request, response) -> {
@@ -21,6 +22,7 @@ public class App {
       String originalString = request.queryParams("original-string");
       String puzzleString = App.vowelReplacer(originalString);
       model.put("puzzleString", puzzleString);
+      model.put("originalString", originalString);
 
       return new ModelAndView(model, layout);
     }, new VelocityTemplateEngine());
