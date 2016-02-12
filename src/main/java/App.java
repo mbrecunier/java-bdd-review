@@ -10,7 +10,7 @@ public class App {
   }
 
   public static String vowelReplacer(String originalString) {
-    String[] vowels = "aeiou".split("");
+    String[] vowels = "aeiouAEIOU".split("");
     String puzzleString = originalString;
 
     for (String vowel : vowels) {
