@@ -20,6 +20,8 @@ public class AppTest extends FluentTest {
   public void rootTest() {
     goTo("http://localhost:4567/");
     assertThat(pageSource()).contains("Enter a word or sentence");
+    submit(".btn-success");
+    assertThat(pageSource()).contains("Can you guess this puzzle?");
   }
 
   @Test
