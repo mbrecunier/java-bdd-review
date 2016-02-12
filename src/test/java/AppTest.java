@@ -34,4 +34,16 @@ public class AppTest extends FluentTest {
     App testApp = new App();
     assertEquals("h-y", testApp.vowelReplacer("hey"));
   }
+
+  @Test
+  public void vowelReplacer_replacesMultipleVowels_changedString() {
+    App testApp = new App();
+    assertEquals("p-nn-", testApp.vowelReplacer("penne"));
+  }
+
+  @Test
+  public void vowelReplacer_replacesAllVowels_changedString() {
+    App testApp = new App();
+    assertEquals("-v-ry c-t -s -nd-rgr--nd"", testApp.vowelReplacer("every cat is underground"));
+  }
 }
