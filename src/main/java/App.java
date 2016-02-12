@@ -21,6 +21,7 @@ public class App {
 
       String originalString = request.queryParams("original-string");
       String puzzleString = App.vowelReplacer(originalString);
+      String guess = request.queryParams("guess");
       model.put("puzzleString", puzzleString);
       model.put("originalString", originalString);
 
