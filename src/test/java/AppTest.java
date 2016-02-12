@@ -25,7 +25,13 @@ public class AppTest extends FluentTest {
   @Test
   public void vowelReplacer_returnsString_string() {
     App testApp = new App();
-    String puzzle = testApp.vowelReplacer();
-    assertEquals(true, puzzle instanceof String);
+    String puzzleString = testApp.vowelReplacer("hello");
+    assertEquals(true, puzzleString instanceof String);
+  }
+
+  @Test
+  public void vowelReplacer_turnsEIntoDash_changedString() {
+    App testApp = new App();
+    assertEquals("h-y", testApp.vowelReplacer("hey"));
   }
 }
