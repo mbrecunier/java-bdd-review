@@ -1,12 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="AppTest" tests="6" skipped="0" failures="0" errors="0" timestamp="2016-02-12T17:00:13" hostname="epicodus-30.local" time="0.171">
+<testsuite name="AppTest" tests="7" skipped="0" failures="0" errors="0" timestamp="2016-02-12T17:05:46" hostname="epicodus-30.local" time="0.213">
   <properties/>
-  <testcase name="vowelReplacer_turnsEIntoDash_changedString" classname="AppTest" time="0.003"/>
+  <testcase name="vowelReplacer_turnsEIntoDash_changedString" classname="AppTest" time="0.004"/>
   <testcase name="vowelReplacer_isCaseInsensitive_changedString" classname="AppTest" time="0.001"/>
-  <testcase name="rootTest" classname="AppTest" time="0.146"/>
-  <testcase name="vowelReplacer_returnsString_string" classname="AppTest" time="0.0"/>
-  <testcase name="vowelReplacer_replacesMultipleVowels_changedString" classname="AppTest" time="0.001"/>
-  <testcase name="vowelReplacer_replacesAllVowels_changedString" classname="AppTest" time="0.0"/>
+  <testcase name="rootTest" classname="AppTest" time="0.171"/>
+  <testcase name="vowelReplacer_returnsString_string" classname="AppTest" time="0.001"/>
+  <testcase name="vowelReplacer_replacesMultipleVowels_changedString" classname="AppTest" time="0.0"/>
+  <testcase name="vowelReplace_doesNotInterfereWithPunctuation_changedString" classname="AppTest" time="0.0"/>
+  <testcase name="vowelReplacer_replacesAllVowels_changedString" classname="AppTest" time="0.001"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

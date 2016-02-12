@@ -52,4 +52,10 @@ public class AppTest extends FluentTest {
     App testApp = new App();
     assertEquals("w--H--h-h", testApp.vowelReplacer("wOaHoAhOh"));
   }
+
+  @Test
+  public void vowelReplace_doesNotInterfereWithPunctuation_changedString() {
+    App testApp = new App();
+    assertEquals("Y--'r- (m-yb-) - * st-d3nt", testApp.vowelReplacer("You're (maybe) a * stud3nt"));
+  }
 }
